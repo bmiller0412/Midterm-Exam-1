@@ -10,11 +10,11 @@ namespace Exam_1
     class animal
     {
         //Variables and Datatypes needed for animal class
-        public string animalType;
-        public string animalBreed;
-        public string animalColor;
-        public string animalGender;
-        public decimal cost = 5000.00m;  //m converts it to money format
+        private string animalType;
+        private string animalBreed;
+        private string animalColor;
+        private string animalGender;
+        private decimal cost = 5000.00m;  //m converts it to money format
         public decimal salesTax = 0.075m; //m converts sales tax to money format
         public decimal calculatedTax;
 
@@ -34,32 +34,32 @@ namespace Exam_1
         }
 
         //Properties of Animal
-        public string AnimalType
+        private string AnimalType
         {
-            get { return AnimalType; }
-            set { AnimalType = value; }
+            get { return animalType; }
+            set { animalType = value; }
         }
 
-        public string AnimalBreed
+        private string AnimalBreed
         {
-            get { return AnimalBreed; }
-            set { AnimalBreed = value; }
+            get { return animalBreed; }
+            set { animalBreed = value; }
         }
 
-        public string AnimalColor
+        private string AnimalColor
         {
-            get { return AnimalColor; }
-            set { AnimalColor = value; }
+            get { return animalColor; }
+            set { animalColor = value; }
         }
 
-        public string AnimalGender
+        private string AnimalGender
         {
-            get { return AnimalGender; }
-            set { AnimalGender = value; }
+            get { return animalGender; }
+            set { animalGender = value; }
         }
         
         //Method that calculates the sales tax for animal purchase
-        public decimal GetCalculatedTax()
+        private decimal GetCalculatedTax()
         {
             return calculatedTax = cost * salesTax;
         }
