@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Exam_1
 {
-    class animal
+    class Animal
     {
         //Variables and Datatypes needed for animal class
         private string animalType;
@@ -19,7 +19,7 @@ namespace Exam_1
         public decimal calculatedTax;
 
         //Default constructor with given default fields
-        public void Animal(string Cat, string Siamese, string Seal_Point, string Male, double cost)
+        public Animal(string Cat, string Siamese, string Seal_Point, string Male, double cost)
         {
             animalType = Cat;
             animalBreed = Siamese;
@@ -28,7 +28,7 @@ namespace Exam_1
             cost = 5000.00;
         }
 
-        public void Animal()
+        public Animal()
         {
             
         }
