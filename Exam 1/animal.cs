@@ -18,19 +18,23 @@ namespace Exam_1
         public decimal salesTax = 0.075m; //m converts sales tax to money format
         public decimal calculatedTax;
 
-        //Default constructor with given default fields
-        public Animal(string Cat, string Siamese, string Seal_Point, string Male, double cost)
+        //Constructor
+        public Animal(string animalType, string animalBreed, string animalColor, string animalGender, decimal cost)
         {
-            animalType = Cat;
-            animalBreed = Siamese;
-            animalColor = Seal_Point;
-            animalGender = Male;
-            cost = 5000.00;
+            this.animalType = animalType;
+            this.animalBreed = animalBreed;
+           this.animalColor = animalColor;
+            this.animalGender = animalGender;
+            this.cost = cost;
         }
-
+        //Default constructor with set values
         public Animal()
         {
-            
+            animalType = "Cat";
+            animalBreed = "Siamese";
+            animalColor = "Seal Point";
+            animalGender = "Male";
+            cost = 5000.00m;
         }
 
         //Properties of Animal
