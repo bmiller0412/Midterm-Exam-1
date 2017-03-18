@@ -18,7 +18,7 @@ namespace Exam_1
         public decimal salesTax = 0.075m; //m converts sales tax to money format
         public decimal calculatedTax;
 
-        //Constructor
+        //Constructor fuck you
         public Animal(string animalType, string animalBreed, string animalColor, string animalGender, decimal cost)
         {
             this.animalType = animalType;
