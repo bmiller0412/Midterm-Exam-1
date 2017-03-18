@@ -9,13 +9,13 @@ namespace Exam_1
 {
     class animal
     {
-        //Variables and Datatypes needed 
+        //Variables and Datatypes needed for animal class
         public string animalType;
         public string animalBreed;
         public string animalColor;
         public string animalGender;
         public decimal cost = 5000.00m;  //m converts it to money format
-        public decimal salesTax = 0.75m; //m converts sales tax to money format
+        public decimal salesTax = 0.075m; //m converts sales tax to money format
         public decimal calculatedTax;
 
         //Default constructor with given default fields
@@ -62,6 +62,12 @@ namespace Exam_1
         public decimal GetCalculatedTax()
         {
             return calculatedTax = cost * salesTax;
+        }
+
+        // Stores the calculated tax value to be used by the program when called
+        private decimal CalculatedTax()
+        {
+            return calculatedTax;
         }
     }
 }
